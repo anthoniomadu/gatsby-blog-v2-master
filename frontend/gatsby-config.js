@@ -4,12 +4,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Strapi Gatsby Blog Starter",
+    title: "Linden Ustawi Blog",
     titleTemplate: "%s · Unleash content",
     description:
-      "Strapi Gatsby Blog Starter",
+      "Linden Ustawi Blog",
     url: process.env.API_URL || "http://localhost:1337", // No trailing slash allowed!
-    image: "/uploads/default-image.jpeg", // Path to your image you placed in the 'static' folder
+    image: "frontend\src\Static\Img\lu-logo.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@you",
   },
   plugins: [
