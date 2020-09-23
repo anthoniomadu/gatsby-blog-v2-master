@@ -80,7 +80,7 @@ const App = () => {
                 <Nav expand-lg>
                     <NavLink activeClassName='is-active' to='/frontend' >
                       <Nav.Item>
-                        <Nav.Link href='/frontend'>Home</Nav.Link>
+                        <Nav.Link href='/'>Home</Nav.Link>
                       </Nav.Item>
                     </NavLink>
                     <NavLink activeClassName='is-active' to='/plans'>
