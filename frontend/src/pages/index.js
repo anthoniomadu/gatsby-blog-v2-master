@@ -46,9 +46,9 @@ const App = () => {
                         <Nav.Link href='/visitors'>Visitors</Nav.Link>
                       </Nav.Item>
                     </NavLink> */}
-                    <NavLink activeClassName='is-active' to='/frontend'>
+                    <NavLink activeClassName='is-active' to='/'>
                       <Nav.Item>
-                        <Nav.Link href='/frontend'><img src={profileicon} alt='profileicon' className='profileicon'/></Nav.Link>
+                        <Nav.Link href='/'><img src={profileicon} alt='profileicon' className='profileicon'/></Nav.Link>
                       </Nav.Item>
                     </NavLink>
                     <NavLink activeClassName='is-active' to='/login'>
@@ -74,7 +74,7 @@ const App = () => {
           </Navbar>
           <Navbar variant="light" className="navline">
             <Container>{/**We are putting all inside Navbar container so as to center it on parent fluid */}
-                <Navbar.Brand href="/frontend"><img src={logo} alt='company-logo' className='App-logo'/></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={logo} alt='company-logo' className='App-logo'/></Navbar.Brand>
                 <Navbar className='navbar-text'>
                   Linden Ustawi
                 </Navbar>
@@ -83,7 +83,7 @@ const App = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" > 
                 <Col></Col>
                 <Nav expand-lg>
-                    <NavLink activeClassName='is-active' to='/frontend' >
+                    <NavLink activeClassName='is-active' to='/' >
                       <Nav.Item>
                         <Nav.Link href='/'>Home</Nav.Link>
                       </Nav.Item>
@@ -123,7 +123,7 @@ const App = () => {
             </Container>
           </Navbar>
           <Switch>
-            <Route exact={true} path="/frontend" component={Home} />
+            <Route exact={true} path="/" component={Home} />
             <Route exact={true} path="/Aboutus" component={Aboutus} />
             {/** Below is for routing to blog Manager */}
             {/* <Route exact={true} path="/blogmanager" component={BlogManager} /> */}

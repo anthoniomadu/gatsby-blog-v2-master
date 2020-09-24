@@ -1,6 +1,6 @@
 
 import React from "react";
-import '/Users/kamsiyochimokpala/Documents/GitHub/gatsby-blog-v2-master/frontend/src/containers/pages/signupcomponenets/singup.css';
+import './singup.css';
 // import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 //import { Container, Row, Button, Col} from 'react-bootstrap';
 import logo from '../../../Static/Img/lu-logo.png';
