@@ -1,32 +1,37 @@
 
 import React from "react";
+import '/Users/kamsiyochimokpala/Documents/GitHub/gatsby-blog-v2-master/frontend/src/containers/pages/signupcomponenets/singup.css';
 // import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
-import { Container, Row, Button, Col} from 'react-bootstrap';
+//import { Container, Row, Button, Col} from 'react-bootstrap';
+import logo from '../../../Static/Img/lu-logo.png';
 
 const signupPage = () => {
-return (
-<Container>
-  <Row>
-    <Col md="6">
-      <form>
-        <p className="h5 text-center mb-4">Sign up</p>
-        <div className="grey-text">
-          <input label="Your name" icon="user" group type="text" validate error="wrong"
-            success="right" />
-          <input label="Your email" icon="envelope" group type="email" validate error="wrong"
-            success="right" />
-          <input label="Confirm your email" icon="exclamation-triangle" group type="text" validate
-            error="wrong" success="right" />
-          <input label="Your password" icon="lock" group type="password" validate />
-        </div>
-        <div className="text-center">
-          <Button color="primary">Register</Button>
-        </div>
-      </form>
-    </Col>
-  </Row>
-</Container>
-);
-};
+  return (
+      <form class="form-signin text-center">
+    <img class="mb-4" src= {logo} alt="" width="142" height="202"/>
+    {/* <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1> */}
+    <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus/>
+ 
+    <label for="inputEmail" class="sr-only">Repeat Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Repeat Email address" required autofocus/>
+      
+    <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required/>
 
-export default  signupPage;
+    <label for="psw-repeat" class="sr-only">Repeat Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Repeat Password" required/>
+     
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"/> Remember me
+        </label>
+        <button class="btn btn-lg bg-light border-green btn-block" type="submit">Sign Up</button>
+    </div>
+</form>
+)
+}
+
+export default signupPage;
+
+

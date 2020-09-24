@@ -9,7 +9,7 @@ import forum from '../containers/pages/forumcomponents/forum';
 import PlansList from '../containers/pages/planscomponents/Plans';
 import loginPage from '../containers/pages/logincomponents/login';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import signupPage from '../containers/pages/signupcomponenets/signup';
 // import { PostList, PostEdit, PostCreate, PostIcon } from './posts';
 import {
   BrowserRouter as Router,
@@ -54,6 +54,11 @@ const App = () => {
                     <NavLink activeClassName='is-active' to='/login'>
                       <Nav.Item>
                         <Nav.Link href='/login'>login</Nav.Link>
+                      </Nav.Item>
+                    </NavLink>
+                    <NavLink activeClassName='is-active' to='/signup'>
+                      <Nav.Item>
+                        <Nav.Link href='/signup'>sign up</Nav.Link>
                       </Nav.Item>
                     </NavLink>
                     {/* <Nav.Item>
@@ -128,6 +133,7 @@ const App = () => {
             <Route exact={true} path="/plans" component={PlansList} />
             <Route exact={true} path="/blog" component={BlogApp} />
             <Route exact={true} path="/login" component={loginPage} />
+            <Route exact={true} path="/signup" component={signupPage} />
             {/** Below is for routing URL that matches the path patter /hello/:variable */}
             {/* <Route path="/hello/:name" render={({match}) => {
               return (

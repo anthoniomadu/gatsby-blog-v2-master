@@ -9219,9 +9219,9 @@ strapi-provider-email-sendmail@3.1.1:
     strapi-utils "3.1.1"
 
 strapi-provider-upload-cloudinary@^3.1.1:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.1.5.tgz#fab50a0751347320aae7e9d663a2f4da74a7490e"
-  integrity sha512-CUtZSB+z8yWmniwC8VAIOCQ4iaRW9c1K/Jj8TYSphsJWjXTqYgKRLxFHjG0QGAPMijuiNDx72z2IM/v/pXCfzQ==
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.1.6.tgz#637026e8cdb68c3dba31f2ad8bb83123a7a9fa64"
+  integrity sha512-txqvVS7wPdJNBTOMXe9fpW+ET2v6Tr3P7deG14g1SgV6yJK5yCcowU4xk1dS3rhvHV/RaK5yBQ+kt4dnqAwlCw==
   dependencies:
     cloudinary "^1.14.0"
     into-stream "^5.1.0"
