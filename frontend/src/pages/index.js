@@ -48,10 +48,10 @@ const App = () => {
                     </NavLink> */}
                     <NavLink activeClassName='is-active' to='/'>
                       <Nav.Item>
-                        <Nav.Link href='/'><img src={profileicon} alt='profileicon' className='profileicon'/></Nav.Link>
+                        <Nav.Link href=''><img src={profileicon} alt='profileicon' className='profileicon'/></Nav.Link>
                       </Nav.Item>
                     </NavLink>
-                    <NavLink activeClassName='is-active' to='/login'>
+                    {/* <NavLink activeClassName='is-active' to='/login'>
                       <Nav.Item>
                         <Nav.Link href='/login'>login</Nav.Link>
                       </Nav.Item>
@@ -60,8 +60,8 @@ const App = () => {
                       <Nav.Item>
                         <Nav.Link href='/signup'>sign up</Nav.Link>
                       </Nav.Item>
-                    </NavLink>
-                    {/* <Nav.Item>
+                    </NavLink> 
+                     <Nav.Item>
                       <Form action='/search' inline className="justify-content-end">
                         <ButtonGroup className='ml-2 border rounded'>
                           <FormControl size="sm" type="text" placeholder="Search" />

@@ -11,6 +11,9 @@ const Home = () => {
             <div>
                 <HomeCarousel/>
             </div>
+            <div className="yogapose2">
+            <img src="https://res.cloudinary.com/deya21gvu/image/upload/v1601049128/LU%20pics/APNG/yogapose2_pxtzso.png" alt="Peace"></img>
+            </div>
             <br/>
              <div>
                 <Aboutus/>       
@@ -40,6 +43,9 @@ const Home = () => {
                     </div>
                     <div class="col-md-4">
                         <form>
+                        <fieldset class="form-group">
+                                <input type="text" class="form-control" id="text" placeholder="Name"/>
+                            </fieldset>
                             <fieldset class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"/>
                             </fieldset>
