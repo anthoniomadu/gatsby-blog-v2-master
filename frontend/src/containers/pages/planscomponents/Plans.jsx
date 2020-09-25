@@ -2,7 +2,7 @@ import React from 'react';
 import './pricing.css'
 import free from '../../../Static/Img/blog3.jpg'; 
 import free2 from '../../../Static/Img/blog1.jpg'; 
-import free3 from '../../../Static/Img/blog2.jpg'; 
+// import free3 from '../../../Static/Img/blog2.jpg'; 
 
 const PlansList = () => {
     return(
