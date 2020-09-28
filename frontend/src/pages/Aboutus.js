@@ -3,14 +3,16 @@ import './App.css'
 import aboutus2 from '../Static/Img/Aboutus.jpg'; 
 import { Container } from 'react-bootstrap';
 
+
 const Aboutus = () => {
     return(
+    
         <Container >
 
                 <div class="card mb-3 h-100" >
                 <div class="row no-gutters">
                     <div class="col-md-7">
-                    <img src={aboutus2} class="card-img" />
+                    <img src={aboutus2} alt= "" class="card-img" />
                     </div>
                     <div class="col-md-5">
                     <div class="card-body">
@@ -30,8 +32,6 @@ const Aboutus = () => {
                     </div>
                 </div>
                 </div>
-
-
         </Container>
         )
 }

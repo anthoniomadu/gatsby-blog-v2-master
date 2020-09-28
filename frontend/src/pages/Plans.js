@@ -1,7 +1,7 @@
 import React from 'react';
-import './pricing.css'
-import free from '../../../Static/Img/blog3.jpg'; 
-import free2 from '../../../Static/Img/blog1.jpg'; 
+import '../containers/pages/planscomponents/pricing.css'
+import free from '../Static/Img/blog3.jpg'; 
+import free2 from '../Static/Img/blog1.jpg'; 
 // import free3 from '../../../Static/Img/blog2.jpg'; 
 
 const PlansList = () => {
@@ -15,7 +15,7 @@ const PlansList = () => {
               <div className="card-deck mb-3 text-center">
                 <div className="card mb-4 shadow-sm">
                   <div className="card-header">
-                  <img src={free} class="card-img" />
+                  <img src={free} alt= "" class="card-img" />
                     <h4 className="my-0 font-weight-normal">Free</h4>
             </div>
             <div className="card-body">
@@ -32,7 +32,7 @@ const PlansList = () => {
           </div>
           <div className="card mb-4 shadow-sm">
             <div className="card-header">
-            <img src={free2} class="card-img" />
+            <img src={free2} alt= "" class="card-img" />
               <h4 className="my-0 font-weight-normal">Pro</h4>
             </div>
             <div className="card-body">
@@ -48,7 +48,7 @@ const PlansList = () => {
           </div>
           <div className="card mb-4 shadow-sm">
             <div className="card-header">
-            <img src={free2} class="card-img" />
+            <img src={free2} alt= "" class="card-img" />
               <h4 className="my-0 font-weight-normal">Pro plus</h4>
             </div>
             <div className="card-body">
