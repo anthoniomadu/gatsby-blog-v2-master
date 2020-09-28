@@ -1,7 +1,12 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
+// import Navigation from "./mainnav";
+import { Container } from "react-bootstrap";
 
 const Nav = () => (
+  <Container>
+  
+  
   <StaticQuery
     query={graphql`
       query {
@@ -26,9 +31,7 @@ const Nav = () => (
           <nav className="uk-navbar-container" data-uk-navbar>
             <div className="uk-navbar-left">
               <ul className="uk-navbar-nav">
-                <li>
-                  <Link to="/">{data.strapiHomepage.Nav.navText}</Link>
-                </li>
+                
               </ul>
             </div>
 
@@ -54,7 +57,7 @@ const Nav = () => (
       </div>
     }
   />
-
+</Container>
 )
 
 export default Nav

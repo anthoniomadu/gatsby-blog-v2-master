@@ -12,22 +12,24 @@ import './App.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import signupPage from '../containers/pages/signupcomponenets/signup';
 import { Container } from 'react-bootstrap';
-import Navigation from "../components/Mainnav"
+import Navigation from "../components/mainnav"
 
 
 const App = () => {
   return (
     <Container>
-    <Navigation/>
-    <Container>
-        <footer>
-        <div  className="footerbt container text-center">© 2020 Copyright:
-          <a path="https://lindenustawi.com/"> Linden Ustawi</a>
-          </div>
-        </footer>
-    
+        <Container>
+            <Navigation/>
+        </Container>
+        <Container>
+            <footer>
+            <div  className="footerbt container text-center">© 2020 Copyright:
+              <a path="https://lindenustawi.com/"> Linden Ustawi</a>
+              </div>
+            </footer>
+        
+        </Container>
     </Container>
-  </Container>
 
   );
 }
