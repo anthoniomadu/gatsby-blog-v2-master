@@ -31,12 +31,12 @@ const App = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-        <Link>
+       
         <Nav.Item>
           <Link activeClassName='is-active' to='/'></Link>
           <Nav.Link path="/">Home</Nav.Link>
         </Nav.Item>
-        </Link>
+        
         <Nav.Item>
           <Link activeClassName='is-active' to='/plans'></Link>
           <Nav.Link path="/plans">Plans and Pricings</Nav.Link>
