@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../pages/App.css'
-import aboutus2 from '../../Static/Img/Aboutus.jpg'; 
+import './App.css'
+import aboutus2 from '../Static/Img/Aboutus.jpg'; 
 import { Container } from 'react-bootstrap';
 
 const Aboutus = () => {

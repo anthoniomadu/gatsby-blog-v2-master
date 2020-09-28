@@ -14,7 +14,7 @@
 */
 .navbar{
   z-index:100;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 .navbar-text{
    font-size: 30px ;
@@ -132,4 +132,8 @@ input { color: #6F8031; }
 .carousel-indicators{
   top: 90%;
   bottom: auto;
+}
+
+.yogapose2{
+  size:50px;
 }

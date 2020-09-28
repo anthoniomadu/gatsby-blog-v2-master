@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeCarousel from './HomeCarousel';
-import Aboutus from '../pages/Aboutus';
+import Aboutus from '../../pages/Aboutus';
 // import Reelcarousel from './Reelcarousel'
 import '../../pages/App.css'
 import { Container } from 'react-bootstrap';
