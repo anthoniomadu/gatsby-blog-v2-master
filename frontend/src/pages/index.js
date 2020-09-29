@@ -1,15 +1,15 @@
 import React, {Suspense} from 'react';
 // import {Link, Router, Route} from 'react-router'
 // import { Router } from "@reach/router";
-// import {Link} from "gatsby";
+import {Link} from "gatsby";
 import {Jumbotron, Row, Container, Nav, Navbar, Col} from 'react-bootstrap';
-import Aboutus from './Aboutus';
+import Aboutus from './aboutus';
 import logo from '../Static/Img/lu-logo-slant.png';
-import profileicon from '../Static/Img/Asset1.png';
+// import profileicon from '../Static/Img/Asset1.png';
 import './App.css'
-import BlogApp from './Blog';
+import BlogApp from './blog';
 // import forum from '../containers/pages/forumcomponents/forum';
-import PlansList from './Plans';
+import PlansList from './plans';
 // import loginPage from '../containers/pages/logincomponents/login';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import signupPage from '../containers/pages/signupcomponenets/signup';
@@ -33,20 +33,81 @@ const App = () => {
   return (
 
 
-<Container fluid className='w-100 p-0'> {/**Topmost container set to fluid to get from end to end of page */}
+<Container fluid> {/**Topmost container set to fluid to get from end to end of page */}
       <Router>
         <Suspense fallback={<div>Loading...</div>}>
-          <Navbar variant="light"  >
+        {/* <Container>
+            <Navbar className= "Navline" expand="lg"> </Navbar> 
+            <Container className="align-center ml-auto mr-auto">
+            
+            </Container> 
+            <Navbar  expand="lg">
+              <Navbar.Brand path="/"><Link  activeClassName='is-active' to='/'><img src={logo} alt='company-logo' className='App-logo'/></Link></Navbar.Brand>
+            
+            
+              <Nav className="mr-auto" as="ul">
+
+                
+                  <Nav.Item>
+                    <img 
+                      className="yogapose2" 
+                      src="https://res.cloudinary.com/deya21gvu/image/upload/v1601049110/LU%20pics/APNG/lutea2_rlvgqd.png" 
+                      alt="Peace">
+                    </img>
+                  </Nav.Item>
+                
+                
+              </Nav>
+
+
+
+              <Navbar className='Navitext'>
+                <Link 
+                  className='Navitext' 
+                  activeClassName='is-active'
+                  to='/'>
+                  Linden Ustawi
+                </Link>
+              </Navbar>
+
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav" className="success">
+                <Nav className="ml-auto" as="ul">
+
+                <Link 
+                  className="nav-link" 
+                  activeClassName='is-active' 
+                  to='/'>
+                    <Nav.Item as="li">
+                      <li href='/'>Home</li>
+                    </Nav.Item>
+                </Link>
+
+                <Link 
+                  className="nav-link" 
+                  activeClassName='is-active' 
+                  to='/plans'>
+                    <Nav.Item as="li">
+                      <li href='/plans'>Plans and Pricings</li>
+                    </Nav.Item>
+                </Link>
+
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar> 
+          </Container>   */}
+
+          <Navbar ClassName="Navline" expand="lg">
             <Container>{/**We are putting all inside Navbar container so as to center it on parent fluid */}
                 {/** The above makes the menu toggle responsively. Notice the reference to the id of Navbar.Collapse below */}
-                  <Col></Col>
-                  <Nav className="justify-content-end">
-                    
-                    <NavLink activeClassName='is-active' to='/'>
+
+                  <Nav className="mr-auto" as="ul">
+
+                    {/* <NavLink activeClassName='is-active' to='/'>
                       <Nav.Item>
                         <Nav.Link href=''><img src={profileicon} alt='profileicon' className='profileicon'/></Nav.Link>
                       </Nav.Item>
-                    </NavLink>
+                    </NavLink> */}
                     {/* <NavLink activeClassName='is-active' to='/login'>
                       <Nav.Item>
                         <Nav.Link href='/login'>login</Nav.Link>
@@ -68,15 +129,26 @@ const App = () => {
                   </Nav>
             </Container>
           </Navbar>
-          <Navbar variant="light" className="navline">
+          <Navbar expand="lg">
             <Container>{/**We are putting all inside Navbar container so as to center it on parent fluid */}
+
+                <Nav className="mr-auto" as="ul">
+                      <Nav.Item>
+                        <img 
+                          className="yogapose2" 
+                          src="https://res.cloudinary.com/deya21gvu/image/upload/v1601049110/LU%20pics/APNG/lutea2_rlvgqd.png" 
+                          alt="Peace">
+                        </img>
+                      </Nav.Item>
+                </Nav>
+
                 <Navbar.Brand href="/"><img src={logo} alt='company-logo' className='App-logo'/></Navbar.Brand>
-                <Navbar className='navbar-text'>
+                <Navbar  href="/" className='Navitext'>
                   Linden Ustawi
                 </Navbar>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" /> 
+                <Navbar.Toggle aria-controls="basic-navbar-nav" /> 
                 {/** The above makes the menu toggle responsively. Notice the reference to the id of Navbar.Collapse below */}
-                <Navbar.Collapse id="responsive-navbar-nav" > 
+                <Navbar.Collapse id="basic-navbar-nav" > 
                 <Col></Col>
                 <Nav expand-lg>
                     <NavLink activeClassName='is-active' to='/' >
@@ -118,6 +190,8 @@ const App = () => {
                 </Navbar.Collapse>
             </Container>
           </Navbar>
+          
+        
           <Switch>
             <Route exact={true} path="/" component={Home} />
             <Route exact={true} path="/aboutus" component={Aboutus} />
