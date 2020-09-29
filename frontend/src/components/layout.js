@@ -1,11 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
+import Navigation from "./mainnav"
 import Nav from "./nav"
 import Seo from "./seo"
+import { Container } from "react-bootstrap"
+
 
 const Layout = ({ children }) => (
+  <Container>
+  <Navigation />
   <StaticQuery
     query={graphql`
       query {
@@ -34,6 +38,7 @@ const Layout = ({ children }) => (
     </>
   )}
   />
+  </Container>
 )
 
 Layout.propTypes = {

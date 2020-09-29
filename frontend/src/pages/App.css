@@ -12,19 +12,36 @@
   background-color: #f0f0f0;
 }
 */
-.navbar{
-  z-index:100;
+.Navline{
+  z-index:1;
+  margin-top: 5%;
+  position: absolute;
   margin-right: 0px;
+  border-bottom: 2px solid #6F8031;
 }
-.navbar-text{
-   font-size: 30px ;
+/* .Navi2{
+  z-index: -1;
+  padding-top: 50%;
+  margin-right: 0px;
+ 
+} */
+nav-link{
+  color: #6F8031;
+
 }
 
-.flex-container{
+
+
+.Navitext{
+  font-size: xx-large;
+  color: #6F8031;
+}
+
+/* .flex-container{
   display: flex;
   width: 50%;
   height: auto;
-}
+} */
 
 .title{
   color: #6F8031;
@@ -135,5 +152,9 @@ input { color: #6F8031; }
 }
 
 .yogapose2{
-  size:50px;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  margin-right: 800;
+  z-index:100;
 }

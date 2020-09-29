@@ -5,7 +5,7 @@ import { Container, Nav, Navbar} from 'react-bootstrap';
 // import { render } from 'react-dom';
 import Home from '../pages/home';
 import Aboutus from '../pages/aboutus';
-import logo from '../Static/Img/lu-logo.png';
+import logo from '../Static/Img/lu-logo-slant.png';
 // import profileicon from '../Static/Img/Asset1.png';
 import '../pages/App.css'
 import BlogApp from '../pages/blog';
@@ -15,10 +15,11 @@ import PlansList from '../pages/plans';
 
 const Navigation = () => {
     return( 
-      <Container>      
-          <Navbar bg="light" expand="lg">
+      <Container>  
+        <Navbar className= "Navline" expand="lg"></Navbar>    
+          <Navbar className= "Navi2" expand="lg">
           <Navbar.Brand path="/"><img src={logo} alt='company-logo' className='App-logo'/></Navbar.Brand>
-          <Navbar className='navbar-text'>
+          <Navbar className='Navitext'>
                       Linden Ustawi
                     </Navbar>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -50,7 +51,7 @@ const Navigation = () => {
           </Router>
           
         
-        </Container>
+      </Container>
    ) 
 }
 

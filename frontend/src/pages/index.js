@@ -11,23 +11,24 @@ import './App.css'
 // import loginPage from '../containers/pages/logincomponents/login';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 //import signupPage from '../containers/pages/signupcomponenets/signup';
-import { Container } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 import Navigation from "../components/mainnav"
 
 
 const App = () => {
   return (
-    <Container>
+    <Container fluid>
         <Container>
             <Navigation/>
         </Container>
+        <Col></Col>
+        <br/>
         <Container>
             <footer>
             <div  className="footerbt container text-center">© 2020 Copyright:
               <a path="https://lindenustawi.com/"> Linden Ustawi</a>
               </div>
             </footer>
-        
         </Container>
     </Container>
 
