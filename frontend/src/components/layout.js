@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
           description={data.strapiHomepage.Seo.metaDescription}
           image={data.strapiHomepage.Seo.shareImage.image.url}
         />
-      {/* <Nav /> */}
+      <Nav />
       <main>{children}</main>
     </>
   )}
