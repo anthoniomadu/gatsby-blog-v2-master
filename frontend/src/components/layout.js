@@ -8,8 +8,7 @@ import { Container } from "react-bootstrap"
 
 
 const Layout = ({ children }) => (
-  <Container>
-  <Navigation />
+ 
   <StaticQuery
     query={graphql`
       query {
@@ -38,7 +37,7 @@ const Layout = ({ children }) => (
     </>
   )}
   />
-  </Container>
+ 
 )
 
 Layout.propTypes = {

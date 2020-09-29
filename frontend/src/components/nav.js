@@ -1,12 +1,10 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-// import Navigation from "./mainnav";
+
 import { Container } from "react-bootstrap";
 
 const Nav = () => (
-  <Container>
-  
-  
+
   <StaticQuery
     query={graphql`
       query {
@@ -57,7 +55,7 @@ const Nav = () => (
       </div>
     }
   />
-</Container>
+
 )
 
 export default Nav

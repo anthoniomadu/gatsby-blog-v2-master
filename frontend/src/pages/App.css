@@ -152,8 +152,8 @@ input { color: #6F8031; }
 }
 
 .yogapose2{
-  width: 50px;
-  height: 100px;
+  max-width: 50px;
+  height: 10px;
   position: absolute;
   margin-right: 800;
   z-index:100;
