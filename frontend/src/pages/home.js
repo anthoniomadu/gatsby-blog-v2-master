@@ -31,7 +31,14 @@ class Home extends Component {
         <Container>
           <HomeCarousel />
         </Container>
-    
+        <Container>
+          <div className="yogapose2">
+            <img
+              src="https://res.cloudinary.com/deya21gvu/image/upload/v1601049128/LU%20pics/APNG/yogapose2_pxtzso.png"
+              alt="Peace"
+            ></img>
+          </div>
+        </Container>
         <br />
         <div>
           <Aboutus />
@@ -113,7 +120,16 @@ class Home extends Component {
           </div>
         </Container>
 
-        
+        {/* <div>
+                <Reelcarousel/>
+            </div>
+             */}
+        {/* <footer  className="footer py-1 bg-white">         
+                        <div id="footer" className="container-fluid text-center">© 2020 Copyright:
+                            <a href="https://mdbootstrap.com/"> Linden Ustawi</a>
+                        </div>
+                      
+                </footer>           */}
       </Container>
     )
   }
