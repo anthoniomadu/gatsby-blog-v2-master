@@ -38,7 +38,7 @@ class Home extends Component {
           <Aboutus />
         </div>
         <br />
-        <Container class="footer">
+        <Container class="Contactfooter">
           <div class="container">
             <div class="row">
               <div class="col-md-5">
@@ -69,7 +69,7 @@ class Home extends Component {
                 </ul>
                 <br />
               </div>
-              <div className="App">
+              <div className="Contactus">
                 <p>Contact Me</p>
                 <div>
                   <form onSubmit={this.handleSubmit}>
