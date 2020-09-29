@@ -8,7 +8,7 @@ module.exports = {
     titleTemplate: "%s · Unleash content",
     description:
       "Linden Ustawi Blog",
-    url: process.env.API_URL || "https://lu-app.herokuapp.com", // No trailing slash allowed!
+    url: process.env.API_URL || "http://localhost:1337", // No trailing slash allowed!
     image: "frontend\src\Static\Img\lu-logo.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@you",
   },
@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "https://lu-app.herokuapp.com",
+        apiURL: process.env.API_URL || "http://localhost:1337",
         contentTypes: [
           "article",
           "category",
