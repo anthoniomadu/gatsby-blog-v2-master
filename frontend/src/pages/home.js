@@ -41,28 +41,28 @@ const Home = () => {
                         </ul>
                         <br/>
                     </div>
-                    <div class="col-md-8">
-                        <h5 class="text-md-left">Contact Us</h5>
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <form>
-                        <fieldset class="form-group">
-                                <input type="text" class="form-control" id="text" placeholder="Name"/>
-                            </fieldset>
-                            <fieldset class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"/>
-                            </fieldset>
-                            <fieldset class="form-group">
-                                <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                            </fieldset>
-                            <fieldset class="form-group text-xs-right">
-                                <button type="button" class="btn  border ">Send</button>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                    <div className="App">
+    <p>Contact Me</p>
+    <div>
+    <form action="/action_page.php">
+    <label>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+
+    <label>Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email" />
+
+
+    <label>Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+    <input type="submit" value="Submit" />
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
         </Container>
     
             {/* <div>
@@ -78,5 +78,20 @@ const Home = () => {
         </Container>
         )
 }
+state = {
+    fname: "",
+    lname: "",
+    email: "",
+    message: "",
+}
+
+handleSubmit = (e) =>{
+     e.preventDefault();
+     this.setState({
+        [e.target.name]: e.target.value
+
+})
+}
+
 
 export default Home;
