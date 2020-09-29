@@ -16,28 +16,42 @@ import PlansList from '../pages/plans';
 const Navigation = () => {
     return( 
       <Container>  
-        <Navbar className= "Navline" expand="lg"></Navbar>    
-          <Navbar className= "Navi2" expand="lg">
-          <Navbar.Brand path="/"><img src={logo} alt='company-logo' className='App-logo'/></Navbar.Brand>
+        <Navbar className= "Navline" expand="lg"> </Navbar> 
+        <Container className="align-center ml-auto mr-auto">
+        
+         </Container> 
+         <Navbar  expand="lg">
+          <Navbar.Brand path="/"><Link  activeClassName='is-active' to='/'><img src={logo} alt='company-logo' className='App-logo'/></Link></Navbar.Brand>
+         
+         
+          <Nav className="mr-auto" as="ul">
+          <Nav.Item>
+          <img className="yogapose2" src="https://res.cloudinary.com/deya21gvu/image/upload/v1601049110/LU%20pics/APNG/lutea2_rlvgqd.png" alt="Peace"></img>
+          </Nav.Item>
+          </Nav>
+
+
+
           <Navbar className='Navitext'>
-                      Linden Ustawi
+          <Link className='Navitext' activeClassName='is-active' to='/'>
+             Linden Ustawi</Link>
                     </Navbar>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className="success">
             <Nav className="ml-auto" as="ul">
            
             <Nav.Item as="li">
-              <Link className="nav-link" activeClassName='is-active' to='/'>Home</Link> {Home}
+              <Link className="nav-link" activeClassName='is-active' to='/'>Home</Link>
             </Nav.Item>
             
             <Nav.Item as="li">
-              <Link className="nav-link" activeClassName='is-active' to='/plans'> Plans and Pricings</Link> {PlansList}
+              <Link className="nav-link" activeClassName='is-active' to='/plans'> Plans and Pricings</Link> 
             </Nav.Item>
             <Nav.Item as="li">
-              <Link className="nav-link" activeClassName='is-active' to='/blog'> Blog</Link> {BlogApp}
+              <Link className="nav-link" activeClassName='is-active' to='/blog'> Blog</Link> 
             </Nav.Item>
             <Nav.Item as="li">
-              <Link className="nav-link" activeClassName='is-active' to='/aboutus'> Aboutus</Link> {Aboutus}
+              <Link className="nav-link" activeClassName='is-active' to='/aboutus'> Aboutus</Link> 
             </Nav.Item>
             </Nav>
           </Navbar.Collapse>
@@ -49,7 +63,6 @@ const Navigation = () => {
             <Aboutus  path="/aboutus" Components= {BlogApp}/>
             <PlansList path="/plans" Components= {Aboutus}/>    
           </Router>
-          
         
       </Container>
    ) 

@@ -2,13 +2,16 @@ import React from 'react';
 import './App.css'
 import aboutus2 from '../Static/Img/Aboutus.jpg'; 
 import { Container } from 'react-bootstrap';
+import Navigation from '../components/mainnav';
 
 
 const Aboutus = () => {
     return(
-    
+        
         <Container >
-
+            <Container>
+            
+            </Container>
                 <div class="card mb-3 h-100" >
                 <div class="row no-gutters">
                     <div class="col-md-7">

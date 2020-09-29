@@ -2,6 +2,14 @@
 .App-logo {
   height: 10vmin;
 }
+.Navline{
+  position:relative;
+  margin-top: 0%;
+  margin-right: 0px;
+  border-bottom: 2px solid #6F8031;
+  z-index: 2;
+}
+
 
 .profileicon {
   height: 3vmin;
@@ -12,31 +20,41 @@
   background-color: #f0f0f0;
 }
 */
-.Navline{
-  z-index:1;
-  margin-top: 5%;
-  position: absolute;
-  margin-right: 0px;
-  border-bottom: 2px solid #6F8031;
-}
+
 /* .Navi2{
   z-index: -1;
   padding-top: 50%;
   margin-right: 0px;
  
 } */
-nav-link{
+ .Nalink{
   color: #6F8031;
-
 }
-
-
+.Nalink:hover{
+  color: #6F8031;
+} 
 
 .Navitext{
+  position: relative;
+  z-index:1;
   font-size: xx-large;
   color: #6F8031;
 }
 
+.Navitext:hover {
+  color:  #61702b;
+}
+
+.yogapose2{
+  position: absolute;
+  margin-bottom: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  top:0;
+  max-height: 10vmin;
+  z-index:2;
+}
 /* .flex-container{
   display: flex;
   width: 50%;
@@ -151,10 +169,6 @@ input { color: #6F8031; }
   bottom: auto;
 }
 
-.yogapose2{
-  max-width: 50px;
-  height: 10px;
-  position: absolute;
-  margin-right: 800;
-  z-index:100;
+.Cartext{
+  color:#6F8031;
 }

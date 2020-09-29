@@ -5,8 +5,11 @@ import Layout from "../components/layout"
 import ArticlesComponent from "../components/articles"
 
 import "../assets/css/main.css"
+import Navigation from "../components/mainnav"
+import { Container } from "react-bootstrap"
 
 const Blogapp = () => (
+  <Container>
   <Layout>
     <StaticQuery
       query={graphql`
@@ -57,6 +60,7 @@ const Blogapp = () => (
       )}
     />
   </Layout>
+  </Container>
 )
 
 export default Blogapp

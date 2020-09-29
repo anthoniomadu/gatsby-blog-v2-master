@@ -3,21 +3,19 @@ import HomeCarousel from '../containers/pages/HomeCarousel';
 import Aboutus from './aboutus';
 // import Reelcarousel from './Reelcarousel'
 import './App.css'
-import { Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap'
+import Navigation from '../components/mainnav';
 
 const Home = () => {
     return(
         
         <Container class='row'>
         <br/>
+        
             <Container>
                 <HomeCarousel/>
             </Container>
-            <Container>
-            <div className="yogapose2">
-            <img src="https://res.cloudinary.com/deya21gvu/image/upload/v1601049128/LU%20pics/APNG/yogapose2_pxtzso.png" alt="Peace"></img>
-            </div>
-            </Container>
+        
             <br/>
              <div>
                 <Aboutus/>       
@@ -42,7 +40,7 @@ const Home = () => {
                         <br/>
                     </div>
                     <div class="col-md-8">
-                        <h5 class="text-md-left">Contact Us</h5>
+                        <h3 className="Cartext text-md-left" >Contact Us</h3>
                         
                     </div>
                     <div class="col-md-4">

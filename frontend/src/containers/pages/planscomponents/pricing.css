@@ -13,8 +13,13 @@ html {
 
 .pricing-header {
   max-width: 700px;
+  font-size: 23%;
 }
 
 .card-deck .card {
   min-width: 220px;
+}
+
+.price{
+  font-size: 2%;
 }

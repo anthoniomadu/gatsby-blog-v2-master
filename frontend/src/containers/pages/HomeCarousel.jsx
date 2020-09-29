@@ -4,7 +4,8 @@ import React, {useState} from 'react';
 import home1 from '../../Static/Img/home.jpg';
 import home2 from '../../Static/Img/Home1.jpg';
 import home3 from '../../Static/Img/Home2.jpg';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+import '../../pages/App.css';
 
 
 
@@ -25,8 +26,8 @@ const HomeCarousel = () => {
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>Welcome to </h3>
-                <p>Linden Ustawi</p>
+                <h3>Welcome to Linden Ustawi </h3>
+               
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -37,8 +38,8 @@ const HomeCarousel = () => {
               />
       
               <Carousel.Caption>
-                <h3>Welcome to Serenity</h3>
-                <p>here for you</p>
+                <h3 className="Cartext" >Welcome to Serenity</h3>
+
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
