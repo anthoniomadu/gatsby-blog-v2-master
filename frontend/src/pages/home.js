@@ -1,11 +1,10 @@
-import React from 'react';
-import HomeCarousel from '../containers/pages/HomeCarousel';
-import Aboutus from './aboutus';
+import React, { Component } from "react"
+import HomeCarousel from "../containers/pages/HomeCarousel"
+import Aboutus from "./aboutus"
 import emailjs from "emailjs-com";
 // import Reelcarousel from './Reelcarousel'
-import './App.css'
-import { Container } from 'react-bootstrap';
-
+import "./App.css"
+import { Container } from "react-bootstrap"
 
 function sendEmail(e){
     e.preventDefault();
@@ -19,39 +18,53 @@ function sendEmail(e){
       e.target.reset()
 }
 
-const Home = () => {
-    return(
-        
-        <Container class='row'>
-        <br/>
-            <Container>
-                <HomeCarousel/>
-            </Container>
-            
-            <br/>
-             <div>
-                <Aboutus/>       
-            </div>
-            <br/>
-            <Container class="footer">
-            <div class="container">
+  const Home = () => {
+    return (
+      <Container class="row">
+        <br />
+        <Container>
+          <HomeCarousel />
+        </Container>
+        <Container>
+        </Container>
+        <br />
+        <div>
+          <Aboutus />
+        </div>
+        <br />
+        <Container class="Contactfooter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="row">
-                            <div class="col-6">
-                                
-                            </div>
-                            
-                        </div>
-                        <ul class="nav">
-                            <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
-                        </ul>
-                        <br/>
-                    </div>
-                    <div className="container">
+                  <div class="col-6"></div>
+                </div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="" class="nav-link pl-0">
+                      <i class="fa fa-facebook fa-lg"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="fa fa-twitter fa-lg"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="fa fa-github fa-lg"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="fa fa-instagram fa-lg"></i>
+                    </a>
+                  </li>
+                </ul>
+                <br />
+              </div>
+              
+              <div className="container">
                     <form className="contact-form" onSubmit={sendEmail}>
       <div className="row pt-5 mx-auto">
           <div className="col-8 form-group mx-auto">
@@ -72,23 +85,23 @@ const Home = () => {
       </div>
     </form>
      </div>
-    </div>
-    </div>
+            </div>
+          </div>
         </Container>
-    
-            {/* <div>
+
+        {/* <div>
                 <Reelcarousel/>
             </div>
              */}
-                {/* <footer  className="footer py-1 bg-white">         
+        {/* <footer  className="footer py-1 bg-white">         
                         <div id="footer" className="container-fluid text-center">© 2020 Copyright:
                             <a href="https://mdbootstrap.com/"> Linden Ustawi</a>
                         </div>
                       
                 </footer>           */}
-        </Container>
-        )
-}
+      </Container>
+    )
+  }
 
 
-export default Home;
+export default Home
