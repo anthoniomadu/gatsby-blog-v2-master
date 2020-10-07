@@ -21,17 +21,27 @@ function sendEmail(e){
   const Home = () => {
     return (
       <Container class="row">
-        <br />
+        
+         <br/>
         <Container>
           <HomeCarousel />
         </Container>
         <Container>
         </Container>
         <br />
+        <br />
+        <br/>
+        <br/>
+        <br/>
         <div>
           <Aboutus />
         </div>
         <br />
+        <br />
+        <br/>
+        <br/>
+        <br/>
+      
         <Container class="Contactfooter">
           <div class="container">
             <div class="row">
@@ -63,24 +73,26 @@ function sendEmail(e){
                 </ul>
                 <br />
               </div>
-              
+              <div className="Contacttext">
+               Contact Us
+               </div>
               <div className="container">
                     <form className="contact-form" onSubmit={sendEmail}>
       <div className="row pt-5 mx-auto">
           <div className="col-8 form-group mx-auto">
               <input type="text" className="form-control" placeholder="Name" name="name"/>
           </div>
-          <div className="col-8 form-group pt-2 mx-auto">
+          <div className="col-8 form-group pt-1 mx-auto">
               <input type="email" className="form-control" placeholder="Email Address" name="email"/>
           </div>
-          <div className="col-8 form-group pt-2 mx-auto">
+          <div className="col-8 form-group pt-1 mx-auto">
               <input type="text" className="form-control" placeholder="Subject" name="subject"/>
           </div>
-          <div className="col-8 form-group pt-2 mx-auto">
-              <textarea className="form-control" id="" cols="30" rows="8"  placeholder="Your message" name="message"></textarea>
+          <div className="col-8 form-group pt-1 mx-auto">
+              <textarea className="form-control" id="" cols="30" rows="5"  placeholder="Your message" name="message"></textarea>
           </div>
-          <div className="col-8 pt-3 mx-auto">
-              <input type="submit" className="btn btn-info" value="Send Message"></input>
+          <div className=" col-8 pt-3 mx-auto">
+              <input type="submit" className=" btn btn-info" value="Send Message"></input>
       </div>
       </div>
     </form>
@@ -93,13 +105,9 @@ function sendEmail(e){
                 <Reelcarousel/>
             </div>
              */}
-        {/* <footer  className="footer py-1 bg-white">         
-                        <div id="footer" className="container-fluid text-center">© 2020 Copyright:
-                            <a href="https://mdbootstrap.com/"> Linden Ustawi</a>
-                        </div>
-                      
-                </footer>           */}
+             <br/>
       </Container>
+     
     )
   }
 

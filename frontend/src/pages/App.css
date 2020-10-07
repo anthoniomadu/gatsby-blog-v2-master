@@ -10,7 +10,16 @@
   z-index: 2;
 }
 
-
+.yogapose2{
+  position: absolute;
+  margin-bottom: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  top:0;
+  max-height: 10vmin;
+  z-index:2;
+}
 .profileicon {
   height: 3vmin;
 }
@@ -40,31 +49,13 @@
   font-size: xx-large;
   color: #6F8031;
 }
-.yogapose2{
-  position: absolute;
-  margin-bottom: auto;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  top:0;
-  max-height: 10vmin;
-  z-index:2;
-}
+
 
 .Navitext:hover {
   color:  #61702b;
 }
 
-.yogapose2{
-  position: absolute;
-  margin-bottom: auto;
-  left: auto;
-  right: auto;
-  bottom: auto;
-  top:0;
-  max-height: 10vmin;
-  z-index:2;
-}
+
 /* .flex-container{
   display: flex;
   width: 50%;
@@ -107,9 +98,9 @@
 
 .Footerbt {
   position: absolute;
+  top:20;
   bottom: 10;
-  width: 100%;
-  height: 20px;
+  height: 30px;
   margin-left: auto;
   margin-right: auto;
   color: #6F8031;
@@ -123,11 +114,7 @@ input { color: #6F8031; }
 /* .justify-content-end{
   background-color: #6F8031; 
 } */
-/* .navline{
-  border-top: 2px solid #6F8031;
-  margin-right: 80px;
-  margin-left: 80px;
-} */
+
 .carousel-at-top-position{
   position:absolute;
   top:0;
@@ -170,7 +157,7 @@ input[type=text],input[type=email], select, textarea {
    box-sizing: border-box;
    margin-top: 6px;
    margin-bottom: 16px;
-   margin-left: auto;
+   
    resize: vertical;
 }
 input[type=submit] {

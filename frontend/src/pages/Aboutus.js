@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css'
-import aboutus2 from '../Static/Img/Aboutus.jpg'; 
+// import aboutus2 from '../Static/Img/Aboutus.jpg'; 
 import { Container } from 'react-bootstrap';
-import Navigation from '../components/mainnav';
+// import Navigation from '../components/mainnav';
 
 
 const Aboutus = () => {
@@ -15,7 +15,7 @@ const Aboutus = () => {
                 <div class="card mb-3 h-100" >
                 <div class="row no-gutters">
                     <div class="col-md-7">
-                    <img src={aboutus2} alt= "" class="card-img" />
+                    <img src="https://res.cloudinary.com/deya21gvu/image/upload/v1599747356/LU%20pics/madison-lavern-4gcqRf3-f2I-unsplash_jwgkcl.jpg" alt= "" class="card-img" />
                     </div>
                     <div class="col-md-5">
                     <div class="card-body">
